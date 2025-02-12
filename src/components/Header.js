@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav } from "./Nav";
 import { NavMobile } from "./NavMobile";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/img/header-logo.png";
 
 export const Header = () => {
   const [bg, setBg] = React.useState(false);
@@ -20,7 +20,7 @@ export const Header = () => {
     >
       <div className="container flex items-center justify-between mx-auto">
         <a href="#">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="" width={90} />
         </a>
         <Nav />
         <NavMobile />
