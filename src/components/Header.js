@@ -8,7 +8,7 @@ export const Header = () => {
 
   React.useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 80 ? setBg(true) : setBg(false);
+      window.scrollY > 1 ? setBg(true) : setBg(false);
     });
   }, []);
 

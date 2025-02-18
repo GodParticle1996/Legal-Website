@@ -1,32 +1,81 @@
 import React from "react";
 import { Header } from "./Header";
 import { Appointment } from "./Appointment";
+import {
+  FaCheckCircle,
+  FaBalanceScale,
+  FaDollarSign,
+  FaUserShield,
+} from "react-icons/fa";
 import LawyerImage from "../assets/img/lawyer_banner.png";
 
 export const Banner = () => {
   return (
     <section
       id="home"
-      className="lg:h-full lg:max-h-800 bg-gradient-to-t from-[#f8f3ec] to-[#e0c8ac]"
+      className="lg:h-full lg:max-h-800 bg-gradient-to-t from-[#f8f3ec] to-[#e0c8ac] pb-10"
     >
       <Header />
-      <div className="container h-full pt-32 mx-auto lg:flex">
-        <div className="h-full px-8 mx-auto text-center lg:text-left md:p-0">
-          <h1 className="font-primary font-black text-6xl lg:text-7xl text-primary mb-4 lg:mt-[70px] leading-tight lg:leading-[90px]">
-            Your Problem <br /> <span className="text-accent">Our Goal.</span>
+      <div className="container h-full pt-40 mx-auto lg:flex">
+        <div className="h-full flex-[30] px-8 mx-auto text-center lg:text-left md:p-0">
+          <h1 className="font-primary font-extrabold text-5xl lg:text-5xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
+            Ready to protect your rights in Small Claims Court? <br />{" "}
+            <span className="text-accent">Let's make it happen.</span>
           </h1>
-          <p className="max-w-sm mx-auto mb-[50px] lg:mx-0 lg:max-w-[540px]">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
-            porro voluptas eaque illo quae fugit excepturi temporibus quidem
-            reiciendis iusto?
+          <p className="max-w-sm mx-auto font-semibold mb-[30px] lg:mx-0 lg:max-w-[95%] text-gray-800 text-lg leading-tight">
+            Handling a Small Claims Court case can be stressful. Our dedicated
+            paralegal team ensures a smooth process, guiding you every step of
+            the way.
           </p>
-
-          <div className="lg:absolute mx-auto max-w-[445px] lg:mx-0">
-            <Appointment />
+          <div className="max-w-sm mx-auto lg:mx-0 lg:max-w-[540px] space-y-4">
+            <div className="flex items-center gap-4 text-lg font-medium text-gray-800">
+              <FaCheckCircle className="text-2xl text-accent" />
+              <div>
+                <span className="font-semibold text-accent">
+                  Free Case Review:
+                </span>
+                <p className="text-base font-semibold">
+                  Get expert insights on your case at no cost.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 text-lg font-medium text-gray-800">
+              <FaBalanceScale className="text-2xl text-accent" />
+              <div>
+                <span className="font-semibold text-accent">
+                  Experienced Paralegal Support:
+                </span>
+                <p className="text-base font-semibold">
+                  Focused exclusively on Small Claims Court matters.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 text-lg font-medium text-gray-800">
+              <FaDollarSign className="text-2xl text-accent" />
+              <div>
+                <span className="font-semibold text-accent">
+                  Transparent Pricing:
+                </span>
+                <p className="text-base font-semibold">
+                  Fixed costs, no hidden fees.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 text-lg font-medium text-gray-800">
+              <FaUserShield className="text-2xl text-accent" />
+              <div>
+                <span className="font-semibold text-accent">
+                  Dedicated Guidance:
+                </span>
+                <p className="text-base font-semibold">
+                  Step-by-step legal assistance tailored to your needs.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="items-end flex-1 hidden lg:flex lg:flex-col">
-          <img src={LawyerImage} alt="" />
+        <div className="lg:relative flex flex-[70] mx-auto max-w-[445px] lg:mx-0">
+          <Appointment />
         </div>
       </div>
     </section>

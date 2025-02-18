@@ -14,9 +14,9 @@ export const Appointment = () => {
       }`}
     >
       <h3 className="text-white text-[28px] font-bold tracking-[0.3px] text-center">
-        Book Appointment
+        Book Free Consultation
       </h3>
-      <div className="w-[54px] h-[3px] bg-white my-6 mx-auto"></div>
+      <div className="w-[50%] h-[3px] bg-white my-3 mx-auto"></div>
       <div className="space-y-[24px]">
         <input
           className="transition-all duration-300 form-control focus:border-primary focus:ring-1 focus:ring-primary"
