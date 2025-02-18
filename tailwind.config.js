@@ -4,6 +4,11 @@ export const theme = {
   fontFamily: {
     primary: "Playfair Display",
     body: "Open Sans",
+    mont: ["Montserrat", "sans-serif"],
+    pops: ["Poppins", "sans-serif"],
+    cyber: ["Orbitron", "sans-serif"],
+    elegant: ["Cormorant Garamond", "serif"],
+    modern: ["Space Grotesk", "sans-serif"],
   },
   screens: {
     sm: "640px",

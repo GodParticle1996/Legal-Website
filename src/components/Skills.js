@@ -9,7 +9,7 @@ const Skills = () => {
         <h3 className="font-primary font-extrabold text-2xl lg:text-3xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
           Our Services
         </h3>
-        <p className="max-w-[540px] mx-auto px-6 lg:px-0 mb-16">
+        <p className="max-w-[540px] mx-auto px-6 lg:px-0 mb-16 font-mont text-base lg:text-lg text-center text-gray-500">
           STC Falcon Legal Services offers a variety of legal services to help
           individuals and businesses navigate complex legal matters effectively.
         </p>
@@ -31,7 +31,7 @@ const Skills = () => {
                   </h4>
                   {/* Description */}
                   <div className="mt-3">
-                    <p className="max-w-[332px] lg:max-w-[350px] text-gray-700 text-justify">
+                    <p className="max-w-[332px] lg:max-w-[350px] text-gray-700 text-justify font-elegant">
                       {item.description}
                     </p>
                   </div>
@@ -39,7 +39,7 @@ const Skills = () => {
                 {/* Show More Button */}
                 <div className="mt-4 text-center">
                   <Link to={`/services/${item.slug}`}>
-                    <button className="px-4 py-2 mt-4 text-white transition duration-300 ease-in-out rounded-lg bg-accent hover:bg-accent-hover">
+                    <button className="px-4 py-2 mt-4 text-white transition duration-300 ease-in-out rounded-lg font-elegant bg-accent hover:bg-accent-hover">
                       Show More
                     </button>
                   </Link>
