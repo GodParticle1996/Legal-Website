@@ -23,9 +23,10 @@ export const Banner = () => {
             <span className="text-accent">Let's make it happen.</span>
           </h1>
           <p className="max-w-sm mx-auto font-semibold mb-[30px] lg:mx-0 lg:max-w-[95%] text-gray-800 text-lg leading-tight">
-            Handling a Small Claims Court case can be stressful. Our dedicated
-            paralegal team ensures a smooth process, guiding you every step of
-            the way.
+            Trust STC Falcon Legal Services for skilled paralegal representation
+            in <span className="text-accent">Small Claims Court</span> matters.
+            Don't let other legal service providers complicate your case. Reach
+            out today to ensure your case is handled with expertise and care.
           </p>
           <div className="max-w-sm mx-auto lg:mx-0 lg:max-w-[540px] space-y-4">
             <div className="flex items-center gap-4 text-lg font-medium text-gray-800">

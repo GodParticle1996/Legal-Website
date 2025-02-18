@@ -20,7 +20,7 @@ export const Header = () => {
     >
       <div className="container flex items-center justify-between mx-auto">
         <a href="#">
-          <img src={Logo} alt="" width={90} />
+          <img src={Logo} alt="" width={120} />
         </a>
         <Nav />
         <NavMobile />

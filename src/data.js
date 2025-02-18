@@ -78,36 +78,42 @@ export const skills = [
   {
     icon: <FaCarCrash className="text-4xl text-primary" />,
     title: "Personal Injury - SABs & WSIB",
+    slug: "personal-injury",
     description:
       "Have you been injured in an accident or at work in Ontario? STC Falcon Legal Services can help you navigate the complexities of Statutory Accident Benefits (SABs) and Workplace Safety and Insurance Board (WSIB) claims. We'll fight for the compensation you deserve for medical expenses, lost income, and other damages.",
   },
   {
     icon: <FaBriefcase className="text-4xl text-primary" />,
     title: "Employment Law",
+    slug: "employment-law",
     description:
       "Facing a wrongful dismissal, workplace discrimination, or other employment issue in Ontario? STC Falcon Legal Services provides legal advice and representation to both employees and employers in a wide range of employment law matters.",
   },
   {
     icon: <FaFileContract className="text-4xl text-primary" />,
     title: "Contract Disputes",
+    slug: "contract-disputes",
     description:
       "Are you involved in a contract dispute in Ontario? STC Falcon Legal Services can help you resolve disagreements related to contracts, including breach of contract, non-performance, and other contractual issues.",
   },
   {
     icon: <FaHammer className="text-4xl text-primary" />,
     title: "Construction & Renovation Disputes",
+    slug: "construction-disputes",
     description:
       "Experiencing problems with a contractor in Ontario? STC Falcon Legal Services assists homeowners and contractors in resolving disputes related to construction projects, renovations, and property damage.",
   },
   {
     icon: <FaBalanceScale className="text-4xl text-primary" />,
     title: "Debt Collection & Small Claims Court",
+    slug: "debt-collection",
     description:
       "Are you trying to recover unpaid invoices or debts in Ontario? STC Falcon Legal Services can help you navigate the Small Claims Court process and pursue legal action to collect what you're owed. We also assist with defending against claims.",
   },
   {
     icon: <FaComments className="text-4xl text-primary" />,
     title: "Mediation & Tribunal Representation",
+    slug: "mediation-tribunal",
     description:
       "Seeking an alternative to litigation? STC Falcon Legal Services offers mediation services throughout Ontario. We also represent clients at various tribunals, advocating for their rights and interests.",
   },

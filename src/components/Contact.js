@@ -11,10 +11,12 @@ const Contact = () => {
         <h2 className="mb-4 text-5xl font-extrabold font-primary">
           Contact us
         </h2>
-        <p className="max-w-[540px] mx-auto px-6 lg:px-0 mb-[64px]">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
-          reiclendis nenum minima pariatur placeat corporis suscipit consectetur
-          aperiam expedita exercitationem.
+        <p className="max-w-[540px] mx-auto px-6 lg:px-0 mb-[64px] text-justify">
+          As licensed paralegals, we can represent you in claims up to $35,000
+          against individuals or businesses. Whether you're initiating a claim
+          with a Plaintiff’s Claim or defending against one, we provide
+          comprehensive support — from filing the necessary documents to
+          representing you through trial and judgment enforcement.
         </p>
         <form className="px-8 lg:px-0 max-w-[600px] mx-auto flex flex-col space-y-6 mb-[46px]">
           <input className="form-control" placeholder="Your Name" type="text" />
