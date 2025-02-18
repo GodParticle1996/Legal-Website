@@ -35,3 +35,26 @@
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-in-out;
 }
+
+@layer utilities {
+  /* Wrapper that acts as a border */
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-transparent p-[2px];
+  }
+
+  /* More visible rotating gradient border */
+  .card-wrapper::before {
+    background: conic-gradient(
+      rgba(255, 165, 0, 0.8) 0deg,
+      rgba(255, 69, 0, 0.8) 60deg,
+      transparent 80deg
+    );
+
+    @apply absolute left-[-20%] top-[-20%] h-[150%] w-[150%] animate-border-spin content-[''] z-0;
+  }
+
+  /* Ensure full content visibility without hiding the glow */
+  .card-content {
+    @apply relative z-10 flex flex-col justify-between w-full h-full p-6 bg-white rounded-2xl;
+  }
+}

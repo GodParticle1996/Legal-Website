@@ -1,41 +1,52 @@
-module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  theme: {
-    fontFamily: {
-      primary: 'Playfair Display',
-      body: 'Open Sans',
+/** @type {import('tailwindcss').Config} */
+export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
+export const theme = {
+  fontFamily: {
+    primary: "Playfair Display",
+    body: "Open Sans",
+  },
+  screens: {
+    sm: "640px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1170px",
+  },
+  extend: {
+    colors: {
+      primary: {
+        DEFAULT: "#292A4A",
+        darker: "#242546",
+        hover: "#383956",
+      },
+
+      accent: {
+        DEFAULT: "#CF9455",
+        hover: "#BB864E",
+      },
+
+      gray: "#766F66",
+      white: "#ffffff",
     },
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1170px',
+
+    spacing: {
+      54: "54px",
+      800: "800px",
     },
-    extend: {
-      colors: {
-        primary: {
-          DEFAULT: '#292A4A',
-          darker: '#242546',
-          hover: '#383956',
+
+    keyframes: {
+      "border-spin": {
+        "100%": {
+          transform: "rotate(-360deg)",
         },
-
-        accent: {
-          DEFAULT: '#CF9455',
-          hover: '#BB864E',
-        },
-
-        gray: '#766F66',
-        white: '#ffffff',
       },
-      spacing: {
-        54: '54px',
-        800: '800px',
-      },
+    },
+    animation: {
+      "border-spin": "border-spin 7s linear infinite",
+    },
 
-      content: {
-        quote: 'url("assets/img/quoteMark.png")',
-      },
+    content: {
+      quote: 'url("assets/img/quoteMark.png")',
     },
   },
-  plugins: [],
 };
+export const plugins = [];

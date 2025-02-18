@@ -2,10 +2,10 @@ import React from "react";
 import { Header } from "./Header";
 import { Appointment } from "./Appointment";
 import {
+  FaUserShield,
+  FaDollarSign,
   FaCheckCircle,
   FaBalanceScale,
-  FaDollarSign,
-  FaUserShield,
 } from "react-icons/fa";
 import LawyerImage from "../assets/img/lawyer_banner.png";
 

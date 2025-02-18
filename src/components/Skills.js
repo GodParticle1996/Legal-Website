@@ -12,20 +12,30 @@ const Skills = () => {
           STC Falcon Legal Solutions offers a variety of legal services to help
           individuals and businesses navigate complex legal matters effectively.
         </p>
-
         <div className="gap-12 lg:grid lg:grid-cols-3">
           {skills.map((item, index) => (
-            <div
-              className="flex flex-col items-center justify-center p-6 mb-16 last:mb-0 lg:mb-0 shadow-lg rounded-2xl bg-white hover:shadow-xl transition duration-300"
-              key={index}
-            >
-              <div className="mb-6">{item.icon}</div>
-              <h4 className="mb-2 text-2xl font-bold font-primary">
-                {item.title}
-              </h4>
-              <p className="max-w-[332px] lg:max-w-[350px] text-gray-700">
-                {item.description}
-              </p>
+            <div key={index} className="h-full card-wrapper">
+              <div className="card-content">
+                <div className="flex flex-col items-center justify-center space-y-4">
+                  {/* Icon */}
+                  <div
+                    className="flex items-center justify-center w-16 h-16 rounded-full bg-accent"
+                    style={{ backgroundColor: item.backgroundColor }}
+                  >
+                    {item.icon}
+                  </div>
+                  {/* Title */}
+                  <h4 className="text-xl font-bold text-center font-primary">
+                    {item.title}
+                  </h4>
+                  {/* Description */}
+                  <div className="mt-3">
+                    <p className="max-w-[332px] lg:max-w-[350px] text-gray-700 text-justify">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>

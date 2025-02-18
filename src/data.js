@@ -79,7 +79,7 @@ export const skills = [
     icon: <FaCarCrash className="text-4xl text-primary" />,
     title: "Personal Injury - SABs & WSIB",
     description:
-      "Have you been injured in a car accident or at work in Ontario? STC Falcon Legal Solutions can help you navigate the complexities of Statutory Accident Benefits (SABs) and Workplace Safety and Insurance Board (WSIB) claims. We'll fight for the compensation you deserve for medical expenses, lost income, and other damages.",
+      "Have you been injured in an accident or at work in Ontario? STC Falcon Legal Solutions can help you navigate the complexities of Statutory Accident Benefits (SABs) and Workplace Safety and Insurance Board (WSIB) claims. We'll fight for the compensation you deserve for medical expenses, lost income, and other damages.",
   },
   {
     icon: <FaBriefcase className="text-4xl text-primary" />,
