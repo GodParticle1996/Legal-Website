@@ -79,37 +79,37 @@ export const skills = [
     icon: <FaCarCrash className="text-4xl text-primary" />,
     title: "Personal Injury - SABs & WSIB",
     description:
-      "Have you been injured in an accident or at work in Ontario? STC Falcon Legal Solutions can help you navigate the complexities of Statutory Accident Benefits (SABs) and Workplace Safety and Insurance Board (WSIB) claims. We'll fight for the compensation you deserve for medical expenses, lost income, and other damages.",
+      "Have you been injured in an accident or at work in Ontario? STC Falcon Legal Services can help you navigate the complexities of Statutory Accident Benefits (SABs) and Workplace Safety and Insurance Board (WSIB) claims. We'll fight for the compensation you deserve for medical expenses, lost income, and other damages.",
   },
   {
     icon: <FaBriefcase className="text-4xl text-primary" />,
     title: "Employment Law",
     description:
-      "Facing a wrongful dismissal, workplace discrimination, or other employment issue in Ontario? STC Falcon Legal Solutions provides legal advice and representation to both employees and employers in a wide range of employment law matters.",
+      "Facing a wrongful dismissal, workplace discrimination, or other employment issue in Ontario? STC Falcon Legal Services provides legal advice and representation to both employees and employers in a wide range of employment law matters.",
   },
   {
     icon: <FaFileContract className="text-4xl text-primary" />,
     title: "Contract Disputes",
     description:
-      "Are you involved in a contract dispute in Ontario? STC Falcon Legal Solutions can help you resolve disagreements related to contracts, including breach of contract, non-performance, and other contractual issues.",
+      "Are you involved in a contract dispute in Ontario? STC Falcon Legal Services can help you resolve disagreements related to contracts, including breach of contract, non-performance, and other contractual issues.",
   },
   {
     icon: <FaHammer className="text-4xl text-primary" />,
     title: "Construction & Renovation Disputes",
     description:
-      "Experiencing problems with a contractor in Ontario? STC Falcon Legal Solutions assists homeowners and contractors in resolving disputes related to construction projects, renovations, and property damage.",
+      "Experiencing problems with a contractor in Ontario? STC Falcon Legal Services assists homeowners and contractors in resolving disputes related to construction projects, renovations, and property damage.",
   },
   {
     icon: <FaBalanceScale className="text-4xl text-primary" />,
     title: "Debt Collection & Small Claims Court",
     description:
-      "Are you trying to recover unpaid invoices or debts in Ontario? STC Falcon Legal Solutions can help you navigate the Small Claims Court process and pursue legal action to collect what you're owed. We also assist with defending against claims.",
+      "Are you trying to recover unpaid invoices or debts in Ontario? STC Falcon Legal Services can help you navigate the Small Claims Court process and pursue legal action to collect what you're owed. We also assist with defending against claims.",
   },
   {
     icon: <FaComments className="text-4xl text-primary" />,
     title: "Mediation & Tribunal Representation",
     description:
-      "Seeking an alternative to litigation? STC Falcon Legal Solutions offers mediation services throughout Ontario. We also represent clients at various tribunals, advocating for their rights and interests.",
+      "Seeking an alternative to litigation? STC Falcon Legal Services offers mediation services throughout Ontario. We also represent clients at various tribunals, advocating for their rights and interests.",
   },
 ];
 

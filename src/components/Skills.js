@@ -9,7 +9,7 @@ const Skills = () => {
           What we do
         </h2>
         <p className="max-w-[540px] mx-auto px-6 lg:px-0 mb-16">
-          STC Falcon Legal Solutions offers a variety of legal services to help
+          STC Falcon Legal Services offers a variety of legal services to help
           individuals and businesses navigate complex legal matters effectively.
         </p>
         <div className="gap-12 lg:grid lg:grid-cols-3">
