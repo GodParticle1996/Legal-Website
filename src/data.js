@@ -54,22 +54,22 @@ export const navigation = [
 // testimonials data
 export const testimonials = [
   {
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem ad consequuntur similique sequi illum dolorum omnis inventore labore odio!",
+    text: "After my workplace injury, I was overwhelmed with the WSIB claim process. STC Falcon Legal Services guided me through every step, securing the compensation I deserved. Their expertise in personal injury claims made all the difference.",
     name: "Jane Cooper",
     image: ProfilePhoto1,
-    position: "CEO at ABC Company",
+    position: "Construction Worker, Toronto",
   },
   {
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem ad consequuntur similique sequi illum dolorum omnis inventore labore odio!",
+    text: "When I was wrongfully dismissed from my position, STC Falcon Legal Services fought for my rights. Their employment law expertise helped me receive fair compensation and restored my confidence. Highly recommend their professional services.",
     name: "Theresa Webb",
     image: ProfilePhoto2,
-    position: "Finance Manager at XYZ Company",
+    position: "Former Finance Manager, Mississauga",
   },
   {
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem rem ad consequuntur similique sequi illum dolorum omnis inventore labore odio!",
+    text: "I had a complex renovation dispute with my contractor. STC Falcon Legal Services helped me navigate Small Claims Court and successfully recovered my losses. Their attention to detail and knowledge of construction disputes was impressive.",
     name: "Kathryn Murphy",
     image: ProfilePhoto3,
-    position: "Contract Manager at LMO Company",
+    position: "Homeowner, Brampton",
   },
 ];
 

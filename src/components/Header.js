@@ -15,7 +15,7 @@ export const Header = () => {
   return (
     <header
       className={`${
-        bg && " bg-white shadow-md py-4"
+        bg && " bg-white shadow-md py-2"
       } p-8 lg:px-0 w-full fixed z-20 transition-all duration-300`}
     >
       <div className="container flex items-center justify-between mx-auto">

@@ -13,7 +13,7 @@ const Skills = () => {
           STC Falcon Legal Services offers a variety of legal services to help
           individuals and businesses navigate complex legal matters effectively.
         </p>
-        <div className="gap-12 lg:grid lg:grid-cols-3">
+        <div className="gap-12 px-5 lg:grid lg:grid-cols-3 lg:px-0">
           {skills.map((item, index) => (
             <div key={index} className="h-full card-wrapper">
               <div className="flex flex-col justify-between card-content">

@@ -31,8 +31,8 @@ export const Banner = () => {
             effectively, we are here to guide you every step of the way. Contact
             us today to ensure your case is handled with expertise and care.
           </p>
-          <div className="max-w-sm mx-auto lg:mx-0 lg:max-w-[540px] space-y-4">
-            <div className="flex items-center gap-4 text-lg font-medium text-gray-800">
+          <div className="max-w-sm mx-auto lg:mx-0 lg:max-w-[540px] space-y-4 sm:mb-2 md:mb-0">
+            <div className="flex flex-col items-center gap-4 text-lg font-medium text-gray-800 md:flex-row">
               <FaCheckCircle className="text-2xl text-accent" />
               <div>
                 <span className="font-semibold text-accent">
@@ -43,7 +43,7 @@ export const Banner = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4 text-lg font-medium text-gray-800">
+            <div className="flex flex-col items-center gap-4 text-lg font-medium text-gray-800 md:flex-row">
               <FaBalanceScale className="text-2xl text-accent" />
               <div>
                 <span className="font-semibold text-accent">
@@ -54,7 +54,7 @@ export const Banner = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4 text-lg font-medium text-gray-800">
+            <div className="flex flex-col items-center gap-4 text-lg font-medium text-gray-800 md:flex-row">
               <FaDollarSign className="text-2xl text-accent" />
               <div>
                 <span className="font-semibold text-accent">
@@ -65,7 +65,7 @@ export const Banner = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4 text-lg font-medium text-gray-800">
+            <div className="flex flex-col items-center gap-4 text-lg font-medium text-gray-800 md:flex-row">
               <FaUserShield className="text-2xl text-accent" />
               <div>
                 <span className="font-semibold text-accent">
@@ -78,7 +78,7 @@ export const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="lg:relative flex flex-[70] mx-auto max-w-[445px] lg:mx-0">
+        <div className="lg:relative flex flex-[70] mx-auto max-w-[445px] lg:mx-0 mt-10 lg:mt-0">
           <Appointment />
         </div>
       </div>
