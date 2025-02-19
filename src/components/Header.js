@@ -19,7 +19,7 @@ export const Header = () => {
       } p-8 lg:px-0 w-full fixed z-20 transition-all duration-300`}
     >
       <div className="container flex items-center justify-between mx-auto">
-        <a href="#">
+        <a href="home">
           <img src={Logo} alt="" width={120} />
         </a>
         <Nav />

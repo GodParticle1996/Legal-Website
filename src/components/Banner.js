@@ -7,7 +7,7 @@ import {
   FaCheckCircle,
   FaBalanceScale,
 } from "react-icons/fa";
-import LawyerImage from "../assets/img/lawyer_banner.png";
+// import LawyerImage from "../assets/img/lawyer_banner.png";
 
 export const Banner = () => {
   return (

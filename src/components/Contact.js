@@ -137,7 +137,7 @@ const Contact = () => {
 
           <div className="flex items-center justify-between max-w-[205px] mx-auto">
             {social.map((item, index) => (
-              <a href="#" key={index}>
+              <a href="home" key={index}>
                 <img src={item.icon} alt="" />
               </a>
             ))}
