@@ -22,7 +22,6 @@ import {
   FaHammer,
   FaCarCrash,
   FaComments,
-  FaBriefcase,
   FaBalanceScale,
   FaFileContract,
 } from "react-icons/fa";
