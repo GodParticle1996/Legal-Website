@@ -78,13 +78,13 @@ export const skills = [
     description:
       "Have you been injured in an accident or at work in Ontario? STC Falcon Legal Services can help you navigate the complexities of Statutory Accident Benefits (SABs) and Workplace Safety and Insurance Board (WSIB) claims. We'll fight for the compensation you deserve for medical expenses, lost income, and other damages.",
   },
-  {
-    icon: <FaBriefcase className="text-4xl text-primary" />,
-    title: "Employment Law",
-    slug: "employment-law",
-    description:
-      "Facing a wrongful dismissal, workplace discrimination, or other employment issue in Ontario? STC Falcon Legal Services provides legal advice and representation to both employees and employers in a wide range of employment law matters.",
-  },
+  // {
+  //   icon: <FaBriefcase className="text-4xl text-primary" />,
+  //   title: "Employment Law",
+  //   slug: "employment-law",
+  //   description:
+  //     "Facing a wrongful dismissal, workplace discrimination, or other employment issue in Ontario? STC Falcon Legal Services provides legal advice and representation to both employees and employers in a wide range of employment law matters.",
+  // },
   {
     icon: <FaFileContract className="text-4xl text-primary" />,
     title: "Contract Disputes",
