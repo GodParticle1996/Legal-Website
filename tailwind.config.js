@@ -19,25 +19,23 @@ export const theme = {
   extend: {
     colors: {
       primary: {
-        DEFAULT: "#292A4A",
-        darker: "#242546",
-        hover: "#383956",
+        DEFAULT: "#D3D3D3", // Silver base color
+        darker: "#A9A9A9", // Darker silver
+        hover: "#D3D3D3", // Lighter silver for hover
       },
-
       accent: {
         DEFAULT: "#CF9455",
         hover: "#BB864E",
       },
-
       gray: "#766F66",
       white: "#ffffff",
+      blue: "rgb(14 14 24)",
+      blueLight: "rgb(1 1 20)",
     },
-
     spacing: {
       54: "54px",
       800: "800px",
     },
-
     keyframes: {
       "border-spin": {
         "100%": {
@@ -48,7 +46,6 @@ export const theme = {
     animation: {
       "border-spin": "border-spin 7s linear infinite",
     },
-
     content: {
       quote: 'url("assets/img/quoteMark.png")',
     },

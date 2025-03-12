@@ -13,7 +13,7 @@ export const Banner = () => {
   return (
     <section
       id="home"
-      className="lg:h-full lg:max-h-800 bg-gradient-to-t from-[#f8f3ec] to-[#e0c8ac] pb-10"
+      className="lg:h-full lg:max-h-800 bg-gradient-to-t from-[#050512] to-[#01012c] pb-10"
     >
       <Header />
       <div className="container h-full pt-40 mx-auto lg:flex">

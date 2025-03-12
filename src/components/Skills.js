@@ -4,12 +4,12 @@ import { skills } from "../data";
 
 const Skills = () => {
   return (
-    <section id="skills" className="section bg-[#f8f3eca1] py-10">
+    <section id="skills" className="py-10 section bg-blue">
       <div className="container mx-auto text-center">
         <h3 className="font-primary font-extrabold text-2xl lg:text-3xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
           Our Services
         </h3>
-        <p className="max-w-[540px] mx-auto px-6 lg:px-0 mb-16 font-mont text-base lg:text-lg text-center text-gray-500">
+        <p className="max-w-[540px] mx-auto px-6 lg:px-0 mb-16 font-mont text-base lg:text-lg text-gray">
           STC Falcon Legal Services offers a variety of legal services to help
           individuals and businesses navigate complex legal matters effectively.
         </p>
@@ -20,18 +20,18 @@ const Skills = () => {
                 <div className="flex flex-col items-center justify-center space-y-4">
                   {/* Icon */}
                   <div
-                    className="flex items-center justify-center w-16 h-16 rounded-full bg-accent"
+                    className="flex items-center justify-center w-16 h-16 rounded-full bg-accent-hover"
                     style={{ backgroundColor: item.backgroundColor }}
                   >
                     {item.icon}
                   </div>
                   {/* Title */}
-                  <h4 className="text-xl font-bold text-center font-primary">
+                  <h4 className="text-xl font-bold text-center font-primary text-primary">
                     {item.title}
                   </h4>
                   {/* Description */}
                   <div className="mt-3">
-                    <p className="max-w-[332px] lg:max-w-[350px] text-gray-700 text-justify font-elegant">
+                    <p className="max-w-[332px] lg:max-w-[350px] text-gray text-justify font-elegant">
                       {item.description}
                     </p>
                   </div>

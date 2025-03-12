@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-body text-primary;
+    @apply font-body text-primary; /* Will use #C0C0C0 */
   }
   .section {
     @apply py-24;
@@ -57,6 +57,6 @@
 
   /* Ensure full content visibility without hiding the glow */
   .card-content {
-    @apply relative z-10 flex flex-col justify-between w-full h-full p-6 bg-white rounded-2xl;
+    @apply relative z-10 flex flex-col justify-between w-full h-full p-6 bg-blueLight rounded-2xl;
   }
 }

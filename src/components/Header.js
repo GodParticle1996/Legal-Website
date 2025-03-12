@@ -16,8 +16,8 @@ export const Header = () => {
   return (
     <header
       className={`${
-        bg && " bg-white shadow-md py-2"
-      } p-8 lg:px-0 w-full fixed z-20 transition-all duration-300`}
+        bg && " bg-blue shadow-md py-2"
+      } pt-3 lg:px-0 w-full fixed z-20 transition-all duration-300`}
     >
       <div className="container flex items-center justify-between mx-auto">
         <Link
@@ -27,7 +27,7 @@ export const Header = () => {
           spy={true}
           className="transition-all duration-300 cursor-pointer"
         >
-          <img src={Logo} alt="" width={120} />
+          <img src={Logo} alt="" width={100} />
         </Link>
         <Nav />
         <NavMobile />
