@@ -92,7 +92,7 @@ export const Appointment = () => {
 
       <form
         onSubmit={handleSubmit}
-        className={`bg-accent w-full p-8 rounded-sm max-w-[22rem] md:max-w-md mx-auto ${
+        className={`bg-accent w-full p-8 rounded-sm max-w-[24rem] md:max-w-md mx-auto ${
           isMounted ? "animate-fade-in" : ""
         }`}
       >
