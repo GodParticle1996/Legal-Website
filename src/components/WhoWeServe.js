@@ -48,7 +48,7 @@ const skills = [
   },
 ];
 
-const Skills = () => {
+const WhoWeServe = () => {
   return (
     <section
       id="skills"
@@ -115,4 +115,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default WhoWeServe;
