@@ -9,7 +9,7 @@ const skills = [
     description: [
       "Representing your business in claims up to $35,000, the current limit for Small Claims Court in Ontario.",
       "Assisting with the recovery of unpaid invoices, outstanding debts, or compensation for incomplete payments.",
-      "Defending your business against unjustified or fraudulent claims, including those related to breach of contract, property damage, or non-delivery of goods/services.",
+      "Defending your business against unjustified claims, including those related to breach of contract, property damage, or non-delivery of goods and services.",
     ],
     backgroundColor: "#1a2a44",
   },
@@ -19,8 +19,8 @@ const skills = [
     icon: "skills/book.png",
     description: [
       "Analyzing contracts to identify breaches, ambiguities, or areas of concern.",
-      "Negotiating settlements to resolve disputes amicably and avoid costly litigation whenever possible.",
       "Providing skilled representation in court if litigation becomes unavoidable.",
+      "Negotiating settlements to resolve disputes amicably and avoid costly litigation.",
     ],
     backgroundColor: "#1a2a44",
   },
@@ -30,8 +30,8 @@ const skills = [
     icon: "/skills/crane.png",
     description: [
       "Resolving disputes related to project delays, defective workmanship, or disagreements over the scope of work.",
+      "Offering guidance and representation to protect your interests in construction or renovation conflicts.",
       "Ensuring compliance with Ontario’s construction and renovation regulations to prevent legal complications.",
-      "Offering guidance and representation to protect your interests in construction conflicts.",
     ],
     backgroundColor: "#1a2a44",
   },
@@ -59,7 +59,7 @@ const Skills = () => {
         <h3 className="font-primary font-extrabold text-2xl lg:text-3xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
           Our Services
         </h3>
-        <p className="max-w-[710px] mx-auto px-6 lg:px-0 mb-16 font-mont text-base lg:text-lg text-gray">
+        <p className="max-w-[730px] mx-auto px-6 lg:px-0 mb-16 font-mont text-base lg:text-lg text-accent-secondary font-medium">
           At STC Falcon, Legal Services, we provide comprehensive legal support
           tailored to the needs of small and medium-sized businesses. Our
           services include:
@@ -88,7 +88,10 @@ const Skills = () => {
                   <div className="flex-grow mt-3 text-left">
                     <ul className="pl-5 space-y-2 list-disc text-accent-secondary">
                       {item.description.map((point, i) => (
-                        <li key={i} className="leading-relaxed text-md">
+                        <li
+                          key={i}
+                          className="font-medium leading-relaxed text-md font-cyber"
+                        >
                           {point}
                         </li>
                       ))}
