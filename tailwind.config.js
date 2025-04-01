@@ -19,18 +19,23 @@ export const theme = {
   extend: {
     colors: {
       primary: {
-        DEFAULT: "#D3D3D3", // Silver base color
+        DEFAULT: "000000", // Base color
         darker: "#A9A9A9", // Darker silver
         hover: "#D3D3D3", // Lighter silver for hover
       },
       accent: {
-        DEFAULT: "#CF9455",
+        DEFAULT: "#212529",
+        "light-default": "#aba78f",
         hover: "#BB864E",
+        secondary: "#595959",
       },
+      "dark-silver": "#d3d3d3",
+      "light-silver": "#e9ecef",
+      "light-peach": "#fff5f0",
+      "muted-teal": "#d8eaea",
       gray: "#766F66",
       white: "#ffffff",
       blue: "rgb(14 14 24)",
-      blueLight: "rgb(1 1 20)",
     },
     spacing: {
       54: "54px",

@@ -2,7 +2,7 @@ import React from "react";
 import { Nav } from "./Nav";
 import { Link } from "react-scroll";
 import { NavMobile } from "./NavMobile";
-import Logo from "../assets/img/header-logo.png";
+import Logo from "../assets/img/main-logo.png";
 
 export const Header = () => {
   const [bg, setBg] = React.useState(false);
@@ -16,8 +16,8 @@ export const Header = () => {
   return (
     <header
       className={`${
-        bg && " bg-blue shadow-md py-2"
-      } pt-3 px-3 lg:px-0 w-full fixed z-20 transition-all duration-300`}
+        bg && " bg-light-silver shadow-md py-1"
+      } pt-1 px-3 lg:px-0 w-full fixed z-20 transition-all duration-300`}
     >
       <div className="container flex items-center justify-between mx-auto">
         <Link
@@ -27,7 +27,7 @@ export const Header = () => {
           spy={true}
           className="transition-all duration-300 cursor-pointer"
         >
-          <img src={Logo} alt="" width={100} />
+          <img src={Logo} alt="" width={140} />
         </Link>
         <Nav />
         <NavMobile />

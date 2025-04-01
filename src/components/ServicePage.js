@@ -13,7 +13,7 @@ const ServicePage = () => {
   }
 
   return (
-    <div className="container px-6 py-10 mx-auto bg-blue">
+    <div className="container px-6 py-10 mx-auto bg-dark-silver">
       <div className="max-w-3xl p-6 mx-auto rounded-lg shadow-lg">
         <div className="flex flex-col items-center space-y-4">
           <div className="text-6xl text-primary">{service.icon}</div>

@@ -57,6 +57,6 @@
 
   /* Ensure full content visibility without hiding the glow */
   .card-content {
-    @apply relative z-10 flex flex-col justify-between w-full h-full p-6 bg-blueLight rounded-2xl;
+    @apply relative z-10 flex flex-col justify-between w-full h-full p-6 bg-light-silver rounded-2xl;
   }
 }

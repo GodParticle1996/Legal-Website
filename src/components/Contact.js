@@ -78,7 +78,7 @@ const Contact = () => {
 
       <section
         id="contact"
-        className="section bg-blue text-white mih-h-[732px]"
+        className="section bg-dark-silver text-white mih-h-[732px]"
       >
         <div className="container mx-auto text-center">
           <h2 className="mb-4 text-5xl font-extrabold font-primary">
