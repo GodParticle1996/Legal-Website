@@ -8,8 +8,8 @@ const skills = [
     icon: "/skills/scale.png",
     description: [
       "Representing your business in claims up to $35,000, the current limit for Small Claims Court in Ontario.",
+      "Defending your business against unjustified claims, including those related to breach of contract, property damage, non-delivery of goods and services and other contractual disputes.",
       "Assisting with the recovery of unpaid invoices, outstanding debts, or compensation for incomplete payments.",
-      "Defending your business against unjustified claims, including those related to breach of contract, property damage, or non-delivery of goods and services.",
     ],
     backgroundColor: "#1a2a44",
   },
@@ -71,7 +71,7 @@ const Skills = () => {
                 <div className="flex flex-col items-center justify-center space-y-4">
                   {/* Icon - Increased size with adjusted background */}
                   <div
-                    className="flex items-center justify-center w-20 h-20 rounded-full"
+                    className="flex items-center justify-center w-20 h-20 border-2 rounded-full"
                     style={{ backgroundColor: "#2d2d2d" }}
                   >
                     <img
@@ -86,11 +86,13 @@ const Skills = () => {
                   </h4>
                   {/* Description with bullet points */}
                   <div className="flex-grow mt-3 text-left">
-                    <ul className="pl-5 space-y-2 list-disc text-accent-secondary">
+                    <ul className="pl-5 space-y-3 list-disc">
                       {item.description.map((point, i) => (
                         <li
                           key={i}
-                          className="font-medium leading-relaxed text-md font-cyber"
+                          className="text-accent-secondary font-medium leading-relaxed text-[15px] font-mont
+                   tracking-wide marker:text-accent
+                   hover:text-primary transition-colors duration-300"
                         >
                           {point}
                         </li>
