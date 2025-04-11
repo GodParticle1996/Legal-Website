@@ -9,7 +9,7 @@
     @apply font-body text-primary; /* Will use #C0C0C0 */
   }
   .section {
-    @apply py-24;
+    @apply py-10;
   }
   .form-control {
     @apply w-full pl-4 text-sm rounded-sm outline-none h-54 font-body text-gray focus:ring-1 focus:ring-primary;

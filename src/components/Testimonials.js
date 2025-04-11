@@ -3,7 +3,10 @@ import TestimonialSlider from "./TestimonialSlider";
 
 const Testimonials = () => {
   return (
-    <section id="about" className=" bg-light-silver h-[346px] lg:pb-[120px]">
+    <section
+      id="about"
+      className=" bg-light-silver h-[346px] lg:pb-[120px] pt-10"
+    >
       <div className="container flex items-center justify-center h-full mx-auto">
         <div className="w-full mx-auto lg:mx-0 lg:max-w-[570px]">
           <TestimonialSlider />

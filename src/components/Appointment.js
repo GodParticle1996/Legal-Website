@@ -139,7 +139,7 @@ export const Appointment = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="flex items-center justify-center w-full p-3 text-black transition-all duration-300 rounded-md bg-light-silver hover:bg-dark-silver disabled:opacity-70 disabled:cursor-not-allowed"
+            className="flex items-center justify-center w-full p-3 font-bold text-black transition-all duration-300 rounded-md font bg-light-silver hover:bg-dark-silver disabled:opacity-70 disabled:cursor-not-allowed"
           >
             {isLoading ? (
               <div className="w-6 h-6 border-2 border-white rounded-full border-t-transparent animate-spin"></div>

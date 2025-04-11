@@ -16,7 +16,7 @@ const skills = [
   {
     title: "Contract Dispute Resolution",
     slug: "contract-disputes",
-    icon: "skills/book.png",
+    icon: "/skills/book.png",
     description: [
       "Analyzing contracts to identify breaches, ambiguities, or areas of concern.",
       "Providing skilled representation in court if litigation becomes unavoidable.",
@@ -38,7 +38,7 @@ const skills = [
   {
     title: "Mediation & Alternative Dispute Resolution",
     slug: "mediation",
-    icon: "skills/handshake.png",
+    icon: "/skills/handshake.png",
     description: [
       "Facilitating dispute resolution through mediation or tribunal representation to save time and costs.",
       "Helping parties reach mutually agreeable solutions outside the courtroom.",
@@ -52,11 +52,11 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-10 section"
+      className="section"
       style={{ backgroundColor: "#d3d3d3" }}
     >
       <div className="container mx-auto text-center">
-        <h3 className="font-primary font-extrabold text-2xl lg:text-3xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
+        <h3 className="font-primary font-extrabold text-2xl lg:text-4xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
           Our Services
         </h3>
         <p className="max-w-[730px] mx-auto px-6 lg:px-0 mb-16 font-mont text-base lg:text-lg text-accent-secondary font-medium">

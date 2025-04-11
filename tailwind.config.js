@@ -19,9 +19,9 @@ export const theme = {
   extend: {
     colors: {
       primary: {
-        DEFAULT: "000000", // Base color
-        darker: "#A9A9A9", // Darker silver
-        hover: "#D3D3D3", // Lighter silver for hover
+        DEFAULT: "000000",
+        darker: "#A9A9A9",
+        hover: "#D3D3D3",
       },
       accent: {
         DEFAULT: "#212529",
