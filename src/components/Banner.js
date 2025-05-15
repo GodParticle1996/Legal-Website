@@ -11,7 +11,7 @@ import {
 export const Banner = () => {
   const [visibleWords, setVisibleWords] = useState(0);
   const [isFlashing, setIsFlashing] = useState(false);
-  const text = "Let's make it happen.";
+  const text = "Your Trusted Paralegal Partner in Ontario";
   const words = text.split(" ");
 
   useEffect(() => {
@@ -41,8 +41,8 @@ export const Banner = () => {
       <Header />
       <div className="container h-full pt-40 mx-auto lg:flex">
         <div className="h-full flex-[30] px-8 mx-auto text-center lg:text-left md:p-0">
-          <h1 className="font-primary font-extrabold text-5xl lg:text-5xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
-            Ready to protect your rights in Small Claims Court? <br />{" "}
+          <h1 className="font-primary font-extrabold text-4xl lg:text-4xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
+            Discover STC Falcon Legal Services <br />{" "}
             <span className="inline-block h-[50px] overflow-hidden">
               {words.map((word, index) => (
                 <span

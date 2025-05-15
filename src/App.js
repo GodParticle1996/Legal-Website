@@ -5,7 +5,6 @@ import Contact from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Banner } from "./components/Banner";
 import ServicePage from "./components/ServicePage";
-import Testimonials from "./components/Testimonials";
 import { WhyChooseUs } from "./components/WhyChooseUs";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -23,7 +22,6 @@ const App = () => {
               <Skills />
               <WhyChooseUs />
               <Contact />
-              <Testimonials />
               <Footer />
             </div>
           }

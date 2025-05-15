@@ -135,23 +135,19 @@ export const social = [
 
 export const whyChooseUs = [
   {
-    title: "Extensive Experience",
-    description:
-      "S.T. Chelvan has successfully handled a wide range of cases, including contract disputes, and debt recovery, ensuring a deep understanding of Ontario's legal landscape.",
+    title: "Licensed Expertise",
+    description: "Deep knowledge of Ontario’s legal frameworks.",
   },
   {
-    title: "Client-Centric Approach",
-    description:
-      "We prioritize clear communication, transparency, and personalized strategies to meet your specific needs.",
+    title: "Affordable Solutions",
+    description: "Streamlined processes to save you time and money.",
   },
   {
-    title: "Proven Track Record",
-    description:
-      "With qualifications spanning multiple jurisdictions—including Canada, the UK, and Singapore—we bring a global perspective to local legal challenges.",
+    title: "Tailored Support",
+    description: "Services customized to your unique needs.",
   },
   {
-    title: "Cost-Effective Solutions",
-    description:
-      "Our goal is to resolve disputes efficiently, minimizing legal expenses while maximizing outcomes for your business.",
+    title: "Collaborative Approach",
+    description: "Focused on practical outcomes and client satisfaction.",
   },
 ];
