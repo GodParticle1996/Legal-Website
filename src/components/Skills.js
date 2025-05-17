@@ -1,48 +1,49 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const skills = [
   {
-    title: "Small Claims Court",
+    title: "SMALL CLAIMS COURT REPRESENTATION",
     slug: "small-claims",
     icon: "/skills/scale.png",
     description: [
-      "Representing your business in claims up to $35,000, the current limit for Small Claims Court in Ontario.",
-      "Defending your business against unjustified claims, including those related to breach of contract, property damage, non-delivery of goods and services and other contractual disputes.",
-      "Assisting with the recovery of unpaid invoices, outstanding debts, or compensation for incomplete payments.",
+      "Claims up to $35,000: File or defend claims for unpaid invoices, breach of contract, or non-delivery of goods/services.",
+      "End-to-End Support: From drafting claims to trial representation and judgment enforcement.",
+      "Why Us? Cost-effective, efficient case management with focused Small Claims Court expertise.",
     ],
     backgroundColor: "#1a2a44",
   },
   {
-    title: "Contract Dispute Resolution",
+    title: "CONTRACT DISPUTE RESOLUTION",
     slug: "contract-disputes",
     icon: "/skills/book.png",
     description: [
-      "Analyzing contracts to identify breaches, ambiguities, or areas of concern.",
-      "Providing skilled representation in court if litigation becomes unavoidable.",
-      "Negotiating settlements to resolve disputes amicably and avoid costly litigation.",
+      "Comprehensive Analysis: Review contracts to identify breaches, ambiguities, or unenforceable terms.",
+      "Settlement-Focused: Negotiate practical solutions like payment plans or mediation to avoid litigation.",
+      "Court Support: Prepare and file claims in Small Claims Court with robust evidence.",
+      "Why Us? Expert guidance within our scope, with referrals to lawyers for complex litigation.",
     ],
     backgroundColor: "#1a2a44",
   },
   {
-    title: "Construction Issues",
+    title: "CONSTRUCTION DISPUTE RESOLUTION",
     slug: "construction",
     icon: "/skills/crane.png",
     description: [
-      "Resolving disputes related to project delays, defective workmanship, or disagreements over the scope of work.",
-      "Offering guidance and representation to protect your interests in construction or renovation conflicts.",
-      "Ensuring compliance with Ontario’s construction and renovation regulations to prevent legal complications.",
+      "Common Issues: Address project delays, defective workmanship, payment disputes, or regulatory challenges.",
+      "Services: Mediation, contract drafting, compliance with Ontario’s Construction Act and Building Code Act, 1992.",
+      "Why Us? Specialized knowledge to minimize disruptions and protect your interests.",
     ],
     backgroundColor: "#1a2a44",
   },
   {
-    title: "Mediation & Alternative Dispute Resolution",
+    title: "MEDIATION & ALTERNATIVE DISPUTE RESOLUTION (ADR)",
     slug: "mediation",
     icon: "/skills/handshake.png",
     description: [
-      "Facilitating dispute resolution through mediation or tribunal representation to save time and costs.",
-      "Helping parties reach mutually agreeable solutions outside the courtroom.",
-      "Providing expert guidance to ensure fair and efficient outcomes in alternative dispute resolution processes.",
+      "Mediation: Facilitate collaborative agreements through neutral, confidential sessions.",
+      "Arbitration Support: Advocate in binding arbitration under Ontario’s Arbitration Act, 1991.",
+      "Advisory Services: Strategic guidance for business, family, employment, or real estate disputes.",
+      "Why Us? Cost-effective, time-saving, and flexible solutions that preserve relationships.",
     ],
     backgroundColor: "#1a2a44",
   },
@@ -81,7 +82,7 @@ const Skills = () => {
                     />
                   </div>
                   {/* Title */}
-                  <h4 className="text-xl font-bold text-center text-primary font-primary">
+                  <h4 className="font-bold text-center text-m text-primary font-primary">
                     {item.title}
                   </h4>
                   {/* Description with bullet points */}
@@ -90,7 +91,7 @@ const Skills = () => {
                       {item.description.map((point, i) => (
                         <li
                           key={i}
-                          className="text-accent-secondary font-medium leading-relaxed text-[15px] font-mont
+                          className="text-accent-secondary font-medium leading-relaxed text-[13px] font-mont
                    tracking-wide marker:text-accent
                    hover:text-primary transition-colors duration-300"
                         >
@@ -101,13 +102,13 @@ const Skills = () => {
                   </div>
                 </div>
                 {/* Show More Button */}
-                <div className="mt-4 text-center">
+                {/* <div className="mt-4 text-center">
                   <Link to={`/services/${item.slug}`}>
                     <button className="w-full px-4 py-2 mt-4 text-white transition duration-300 ease-in-out rounded-lg bg-accent hover:bg-dark-silver hover:text-black font-elegant">
                       Show More
                     </button>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
