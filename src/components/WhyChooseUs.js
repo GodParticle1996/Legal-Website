@@ -18,7 +18,7 @@ export const WhyChooseUs = () => {
               <h4 className="mb-4 text-xl font-bold text-primary font-primary">
                 {item.title}
               </h4>
-              <p className="text-sm font-medium text-accent-secondary">
+              <p className="font-medium text-m text-accent-secondary">
                 {item.description}
               </p>
             </div>

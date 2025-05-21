@@ -37,12 +37,12 @@ export const navigation = [
     href: "skills",
   },
   {
-    name: "Contact Us",
-    href: "contact",
-  },
-  {
     name: "About Us",
     href: "about",
+  },
+  {
+    name: "Contact Us",
+    href: "contact",
   },
 ];
 

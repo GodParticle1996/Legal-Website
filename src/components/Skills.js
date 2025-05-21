@@ -25,7 +25,7 @@ const skills = [
     backgroundColor: "#1a2a44",
   },
   {
-    title: "Resolve Construction Disputes with Confidence!",
+    title: "Resolve Construction Disputes with Confidence",
     slug: "construction",
     icon: "/skills/crane.png",
     description: [
@@ -81,7 +81,7 @@ const Skills = () => {
                       className="object-contain w-full h-full rounded-full"
                     />
                   </div>
-                  <h2 className="font-bold text-center text-m text-primary font-primary">
+                  <h2 className="text-xl font-bold text-center text-primary font-primary">
                     {item.title}
                   </h2>
                   <div className="flex-grow mt-3 text-left w-[100%]">
@@ -91,7 +91,7 @@ const Skills = () => {
                         return (
                           <li
                             key={i}
-                            className="text-accent-secondary font-medium leading-relaxed text-[13px] font-mont tracking-wide marker:text-accent hover:text-primary transition-colors duration-300"
+                            className="font-medium leading-relaxed tracking-wide transition-colors duration-300 text-accent-secondary text-m font-mont marker:text-accent hover:text-primary"
                           >
                             <strong>{label}:</strong> {rest.join(": ")}
                           </li>

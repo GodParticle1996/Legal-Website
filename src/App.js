@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
+import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -21,6 +22,7 @@ const App = () => {
               <Banner />
               <Skills />
               <WhyChooseUs />
+              <About />
               <Contact />
               <Footer />
             </div>
