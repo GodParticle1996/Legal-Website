@@ -11,7 +11,7 @@ import {
 export const Banner = () => {
   const [visibleWords, setVisibleWords] = useState(0);
   const [isFlashing, setIsFlashing] = useState(false);
-  const text = "Your Trusted Paralegal Partner in Ontario";
+  const text = "Your Trusted Paralegal Partner";
   const words = text.split(" ");
 
   useEffect(() => {
@@ -65,12 +65,6 @@ export const Banner = () => {
               @keyframes wordAppear {
                 0% { transform: translateY(20px) scale(0.9); opacity: 0; }
                 100% { transform: translateY(0) scale(1); opacity: 1; }
-              }
-              
-              @keyframes wordFlash {
-                0% { color: red; }
-                50% { color: orange; }
-                100% { color: red; }
               }
               
               .animate-word-appear {

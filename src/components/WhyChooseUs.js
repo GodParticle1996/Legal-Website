@@ -5,7 +5,7 @@ export const WhyChooseUs = () => {
   return (
     <section className="py-16 bg-dark-silver">
       <div className="container mx-auto text-center">
-        <h3 className="font-primary font-extrabold text-2xl lg:text-4xl text-primary mb-8 leading-tight lg:leading-[55px] tracking-tight">
+        <h3 className="font-primary font-extrabold text-2xl lg:text-4xl text-primary mb-8 px-4 leading-tight lg:leading-[55px] tracking-tight">
           Why Choose STC Falcon Legal Services?
         </h3>
 
