@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { social } from "../data";
+// import { social } from "../data";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -186,13 +186,13 @@ const Contact = () => {
           </div>
 
           {/* Social links */}
-          <div className="flex items-center justify-between max-w-[205px] mx-auto">
+          {/* <div className="flex items-center justify-between max-w-[205px] mx-auto">
             {social.map((item, index) => (
               <a href="home" key={index}>
                 <img src={item.icon} alt="" />
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </>
