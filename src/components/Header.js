@@ -27,7 +27,7 @@ export const Header = () => {
           spy={true}
           className="transition-all duration-300 cursor-pointer"
         >
-          <img src={Logo} alt="" width={140} />
+          <img src={Logo} alt="" width={150} />
         </Link>
         <Nav />
         <NavMobile />

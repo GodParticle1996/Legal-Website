@@ -96,10 +96,10 @@ export const Appointment = () => {
           isMounted ? "animate-fade-in" : ""
         } shadow-2xl transform translate-y-4`}
       >
-        <h3 className="text-white text-[28px] font-bold tracking-[0.3px] text-center">
+        <h3 className="text-white text-[23px] font-primary font-bold tracking-[0.3px] text-center">
           Book Free Consultation
         </h3>
-        <div className="w-[50%] h-[3px] bg-white my-3 mx-auto"></div>
+        <div className="w-[67%] h-[3px] bg-white my-2 mx-auto"></div>
         <div className="space-y-[24px]">
           <input
             className="w-full p-3 text-black transition-all duration-300 border border-gray-300 rounded-md outline-none focus:border-accent-hover focus:ring-1 focus:ring-accent-hover"

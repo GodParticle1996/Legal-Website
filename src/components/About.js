@@ -4,7 +4,7 @@ import Logo from "../assets/img/main-logo.png";
 
 const About = () => {
   return (
-    <section id="about" className="section bg-dark-silver min-h-[600px] py-16">
+    <section id="about" className="section bg-dark-silver min-h-[400px] py-16">
       <div className="container mx-auto text-center">
         <h2 className="relative inline-block mb-12 text-4xl font-extrabold font-primary text-primary">
           About Us
@@ -48,7 +48,7 @@ const About = () => {
           </div>
 
           {/* What We Do section */}
-          <div className="p-8 text-left transition-all duration-300 transform rounded-lg shadow-lg bg-light-silver hover:shadow-xl hover:-translate-y-1">
+          {/* <div className="p-8 text-left transition-all duration-300 transform rounded-lg shadow-lg bg-light-silver hover:shadow-xl hover:-translate-y-1">
             <h3 className="pb-3 mb-8 text-2xl font-bold border-b text-primary border-accent">
               What We Do
             </h3>
@@ -104,7 +104,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
