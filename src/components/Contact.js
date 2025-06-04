@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { social } from "../data";
+import { social } from "../data";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -76,7 +76,10 @@ const Contact = () => {
         </div>
       )}
 
-      <section id="contact" className="section bg-dark-silver min-h-[732px]">
+      <section
+        id="contact"
+        className="section bg-dark-silver min-h-[732px] pb-5"
+      >
         <div className="container mx-auto text-center">
           <h2 className="mb-4 text-4xl font-extrabold font-primary text-primary">
             Contact us
@@ -185,14 +188,37 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* Social links */}
-          {/* <div className="flex items-center justify-between max-w-[205px] mx-auto">
-            {social.map((item, index) => (
-              <a href="home" key={index}>
-                <img src={item.icon} alt="" />
-              </a>
-            ))}
-          </div> */}
+          {/* Enhanced LinkedIn section */}
+          <div className="max-w-[650px] mx-auto pb-5">
+            <div className="p-6 rounded-lg shadow-lg bg-light-silver">
+              <h4 className="mb-4 text-lg font-semibold text-primary">
+                Connect with us on LinkedIn
+              </h4>
+              <div className="flex items-center justify-center">
+                <a
+                  href="https://www.linkedin.com/in/thiruchelvan-sivagnasundram-417976153/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center px-6 py-3 space-x-3 transition-all duration-300 transform rounded-lg bg-accent hover:bg-accent-hover hover:scale-105 group"
+                >
+                  {social.map((item, index) => (
+                    <img
+                      key={index}
+                      src={item.icon}
+                      alt="LinkedIn"
+                      className="w-6 h-6 transition-transform duration-300 group-hover:scale-110"
+                    />
+                  ))}
+                  <span className="font-medium text-white">
+                    Follow S.T. Chelvan
+                  </span>
+                </a>
+              </div>
+              <p className="mt-3 text-sm text-accent-secondary">
+                Stay updated with legal insights and professional updates
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </>

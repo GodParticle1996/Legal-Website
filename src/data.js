@@ -12,11 +12,12 @@ import ProfilePhoto3 from "../src/assets/img/profile3.png";
 // import Skill6 from "../src/assets/img/skills/skill6.png";
 
 // import social icons
-import FacebookIcon from "../src/assets/img/social/facebook.png";
-import TwitterIcon from "../src/assets/img/social/twitter.png";
-import InstagramIcon from "../src/assets/img/social/instagram.png";
-import YoutubeIcon from "../src/assets/img/social/youtube.png";
-import PinterestIcon from "../src/assets/img/social/pinterest.png";
+// import FacebookIcon from "../src/assets/img/social/facebook.png";
+// import TwitterIcon from "../src/assets/img/social/twitter.png";
+// import InstagramIcon from "../src/assets/img/social/instagram.png";
+// import YoutubeIcon from "../src/assets/img/social/youtube.png";
+// import PinterestIcon from "../src/assets/img/social/pinterest.png";
+import LinkedinIcon from "../src/assets/img/social/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kMS0xMC5wbmc-removebg-preview.png";
 
 import {
   FaHammer,
@@ -117,20 +118,23 @@ export const skills = [
 // social data
 export const social = [
   {
-    icon: FacebookIcon,
+    icon: LinkedinIcon,
   },
-  {
-    icon: TwitterIcon,
-  },
-  {
-    icon: InstagramIcon,
-  },
-  {
-    icon: YoutubeIcon,
-  },
-  {
-    icon: PinterestIcon,
-  },
+  // {
+  //   icon: FacebookIcon,
+  // },
+  // {
+  //   icon: TwitterIcon,
+  // },
+  // {
+  //   icon: InstagramIcon,
+  // },
+  // {
+  //   icon: YoutubeIcon,
+  // },
+  // {
+  //   icon: PinterestIcon,
+  // },
 ];
 
 export const whyChooseUs = [
