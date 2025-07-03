@@ -4,7 +4,7 @@ const skills = [
   {
     title: "Our Small Claims Court Services",
     slug: "small-claims",
-    icon: "/skills/scale.png",
+    icon: "/skills/smallclaims.png",
     description: [
       "File or Defend Claims: We manage claims up to $35,000, covering issues like unpaid invoices, contract breaches, or non-delivered goods/services.",
       "Comprehensive Support: From drafting and filing claims to representing you in court and enforcing judgments, we guide you every step of the way.",
@@ -15,7 +15,7 @@ const skills = [
   {
     title: "Resolve Your Contract Disputes with STC Falcon Legal Services",
     slug: "contract-disputes",
-    icon: "/skills/book.png",
+    icon: "/skills/contractdisputes.png",
     description: [
       "Comprehensive Contract Analysis: We thoroughly review contracts to identify breaches, ambiguities, or unenforceable terms, empowering you with clear insights.",
       "Settlement-Focused Solutions: Save time and money with practical resolutions like payment plans or mediation to avoid costly litigation.",
@@ -27,7 +27,7 @@ const skills = [
   {
     title: "Resolve Construction Disputes with Confidence",
     slug: "construction",
-    icon: "/skills/crane.png",
+    icon: "/skills/constructiondisputes.png",
     description: [
       "Mediation Support: Fair, efficient resolutions for disputes over delays, workmanship, or payments.",
       "Contract Drafting: Clear, customized contracts to prevent conflicts.",
@@ -38,7 +38,7 @@ const skills = [
   {
     title: "Our Mediation & Dispute Resolution Services (ADR)",
     slug: "mediation",
-    icon: "/skills/handshake.png",
+    icon: "/skills/adr.png",
     description: [
       "Mediation: We act as a neutral guide, bringing you and the other party together in private, confidential sessions. Our goal is to help you reach a fair agreement that works for everyone, without the stress of a courtroom.",
       "Arbitration Support: If your dispute needs a binding decision, we will represent you in arbitration, using our expertise in Ontario’s Arbitration Act, 1991, to ensure your case is presented strongly and resolved decisively.",
@@ -69,18 +69,20 @@ const Skills = () => {
         <div className="grid grid-cols-1 gap-6 px-5 lg:px-0">
           {skills.map((item, index) => (
             <div key={index} className="w-full cursor-pointer card-wrapper">
-              <div className="flex flex-col justify-between p-6 transition-all duration-300 transform rounded-lg shadow-2xl card-content bg-light-silver hover:shadow-3xl hover:-translate-y-1 hover:scale-100">
+              <div className="flex flex-row justify-between p-6 transition-all duration-300 transform rounded-lg shadow-2xl card-content bg-light-silver hover:shadow-3xl hover:-translate-y-1 hover:scale-100">
                 <div className="flex flex-col items-center justify-center space-y-4">
                   <div
-                    className="flex items-center justify-center w-20 h-20 border-2 rounded-full"
+                    className="flex items-center justify-center w-[200px] overflow-hidden h-[180px]"
                     style={{ backgroundColor: "#2d2d2d" }}
                   >
                     <img
                       src={item.icon}
                       alt={item.title}
-                      className="object-contain w-full h-full rounded-full"
+                      className="object-cover"
                     />
                   </div>
+                </div>
+                <div className="flex flex-col items-center justify-center space-y-4">
                   <h2 className="text-xl font-bold text-center text-primary font-primary">
                     {item.title}
                   </h2>
