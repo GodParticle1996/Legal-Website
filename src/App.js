@@ -7,6 +7,7 @@ import { Footer } from "./components/Footer";
 import { Banner } from "./components/Banner";
 import ServicePage from "./components/ServicePage";
 import { WhyChooseUs } from "./components/WhyChooseUs";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 emailjs.init("mkcOv0bBdNkJf32ey");
@@ -28,6 +29,7 @@ const App = () => {
             </div>
           }
         />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/services/:serviceSlug" element={<ServicePage />} />
       </Routes>
     </Router>
