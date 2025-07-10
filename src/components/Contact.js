@@ -87,13 +87,13 @@ const Contact = () => {
 
           {/* New contact information section */}
           <div className="max-w-[650px] mx-auto px-6 lg:px-0 mb-[64px]">
-            <p className="mb-8 font-semibold text-justify text-accent-secondary">
+            {/* <p className="mb-8 font-semibold text-justify text-accent-secondary">
               As licensed paralegals, we can represent you in claims against
               individuals or businesses. Whether you're initiating a claim with
               a Plaintiff's Claim or defending against one, we provide
               comprehensive support — from filing the necessary documents to
               representing you through trial and judgment enforcement.
-            </p>
+            </p> */}
 
             <div className="p-8 text-left rounded-lg shadow-lg bg-light-silver">
               <p className="mb-6 font-medium text-primary">

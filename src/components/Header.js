@@ -20,15 +20,20 @@ export const Header = () => {
       } pt-1 px-3 lg:px-0 w-full fixed z-20 transition-all duration-300`}
     >
       <div className="container flex items-center justify-between mx-auto">
-        <Link
-          to={"home"}
-          smooth={true}
-          offset={-120}
-          spy={true}
-          className="transition-all duration-300 cursor-pointer"
-        >
-          <img src={Logo} alt="" width={200} />
-        </Link>
+        <div>
+          <Link
+            to={"home"}
+            smooth={true}
+            offset={-120}
+            spy={true}
+            className="transition-all duration-300 cursor-pointer"
+          >
+            <img src={Logo} alt="" width={200} />
+          </Link>
+          <div className="flex items-center justify-center text-sm font-extrabold leading-tight align-middle font-primary lg:text-sm text-primary">
+            Your Trusted Legal Partner
+          </div>
+        </div>
         <Nav />
         <NavMobile />
       </div>

@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Banner } from "./components/Banner";
 import ServicePage from "./components/ServicePage";
-import { WhyChooseUs } from "./components/WhyChooseUs";
+// import { WhyChooseUs } from "./components/WhyChooseUs";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const App = () => {
             <div>
               <Banner />
               <Skills />
-              <WhyChooseUs />
+              {/* <WhyChooseUs /> */}
               <About />
               <Contact />
               <Footer />

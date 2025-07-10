@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Header } from "./Header";
-import { Appointment } from "./Appointment";
+// import { Appointment } from "./Appointment";
 import {
   FaUserShield,
   FaDollarSign,
@@ -11,7 +11,7 @@ import {
 export const Banner = () => {
   const [visibleWords, setVisibleWords] = useState(0);
   const [isFlashing, setIsFlashing] = useState(false);
-  const text = "Your Trusted Paralegal Partner";
+  const text = "Your Trusted Legal Partner";
   const words = text.split(" ");
 
   useEffect(() => {
@@ -42,8 +42,8 @@ export const Banner = () => {
       <div className="container h-full pt-40 mx-auto lg:flex">
         <div className="h-full flex-[30] px-8 mx-auto text-center lg:text-left md:p-0">
           <h1 className="font-primary font-extrabold text-4xl lg:text-4xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
-            Discover STC Falcon Legal Services <br />{" "}
-            <span className="inline-block h-[50px] overflow-hidden">
+            {/* Discover STC Falcon Legal Services <br />{" "} */}
+            {/* <span className="inline-block h-[50px] overflow-hidden">
               {words.map((word, index) => (
                 <span
                   key={index}
@@ -58,7 +58,7 @@ export const Banner = () => {
                   {word}
                 </span>
               ))}
-            </span>
+            </span> */}
           </h1>
           <style>
             {`
@@ -138,9 +138,9 @@ export const Banner = () => {
             </div>
           </div>
         </div>
-        <div className="lg:relative flex flex-[70] mx-auto max-w-[445px] lg:mx-0 mt-10 lg:mt-0">
+        {/* <div className="lg:relative flex flex-[70] mx-auto max-w-[445px] lg:mx-0 mt-10 lg:mt-0">
           <Appointment />
-        </div>
+        </div> */}
       </div>
     </section>
   );

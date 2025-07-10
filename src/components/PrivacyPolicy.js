@@ -112,7 +112,7 @@ const PrivacyPolicy = () => {
               </p>
               <p className="mt-3">
                 If you believe any of your information is incorrect, let us know
-                and we'll correct it promptly.
+                and we shall correct it promptly.
               </p>
             </section>
 
