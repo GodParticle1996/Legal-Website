@@ -60,7 +60,7 @@ const Skills = () => {
         <h3 className="font-primary font-extrabold text-2xl lg:text-4xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
           Our Services
         </h3>
-        <p className="max-w-[730px] mx-auto px-6 lg:px-0 mb-16 font-mont text-base lg:text-lg text-accent-secondary font-medium">
+        <p className="max-w-[730px] mx-auto px-6 lg:px-0 mb-16 font-body text-base lg:text-lg text-accent-secondary font-medium">
           At STC Falcon Legal Services, we provide comprehensive legal support
           tailored to the needs of small and medium-sized businesses. Our
           services include:
@@ -69,37 +69,53 @@ const Skills = () => {
         <div className="grid grid-cols-1 gap-6 px-5 lg:px-0">
           {skills.map((item, index) => (
             <div key={index} className="w-full cursor-pointer card-wrapper">
-              <div className="flex flex-row justify-between p-6 transition-all duration-300 transform rounded-lg shadow-2xl card-content bg-light-silver hover:shadow-3xl hover:-translate-y-1 hover:scale-100">
-                <div className="flex flex-col items-center justify-center space-y-4">
-                  <div
-                    className="flex items-center justify-center w-[200px] overflow-hidden h-[180px]"
-                    style={{ backgroundColor: "#2d2d2d" }}
-                  >
-                    <img
-                      src={item.icon}
-                      alt={item.title}
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col items-center justify-center space-y-4">
-                  <h2 className="text-xl font-bold text-center text-primary font-primary">
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                className="flex flex-col p-6 transition-all duration-300 transform rounded-lg shadow-2xl card-content bg-light-silver hover:shadow-3xl hover:-translate-y-1 hover:scale-100"
+              >
+                {/* Main heading centered above the inner content */}
+                <div className="flex">
+                  <h2 className="mb-4 text-xl font-bold text-center text-primary font-primary">
                     {item.title}
                   </h2>
-                  <div className="flex-grow mt-3 text-left w-[100%]">
-                    <ul className="pl-5 space-y-3 list-disc">
-                      {item.description.map((point, i) => {
-                        const [label, ...rest] = point.split(": ");
-                        return (
-                          <li
-                            key={i}
-                            className="font-medium leading-relaxed tracking-wide transition-colors duration-300 text-accent-secondary text-m font-mont marker:text-accent hover:text-primary"
-                          >
-                            <strong>{label}:</strong> {rest.join(": ")}
-                          </li>
-                        );
-                      })}
-                    </ul>
+                </div>
+                {/* Inner container for image and bullet points */}
+                <div className="flex flex-row justify-between space-x-4">
+                  {/* Image div */}
+                  <div className="flex flex-col items-center justify-center">
+                    <div
+                      className="flex items-center justify-center w-[200px] overflow-hidden h-[180px]"
+                      style={{ backgroundColor: "#2d2d2d" }}
+                    >
+                      <img
+                        src={item.icon}
+                        alt={item.title}
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  {/* Bullet points div */}
+                  <div className="flex flex-col items-center justify-center w-full">
+                    <div className="flex-grow w-full text-left">
+                      <ul className="pl-5 space-y-3 list-disc">
+                        {item.description.map((point, i) => {
+                          const [label, ...rest] = point.split(": ");
+                          return (
+                            <li
+                              key={i}
+                              className="font-medium leading-relaxed tracking-wide transition-colors duration-300 text-accent-secondary text-m font-body marker:text-accent hover:text-primary"
+                            >
+                              <strong>{label}:</strong> {rest.join(": ")}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -77,12 +77,10 @@ export const Banner = () => {
             `}
           </style>
           <p className="max-w-sm mx-auto font-semibold mb-[30px] lg:mx-0 lg:max-w-[95%] text-gray-800 text-lg leading-tight">
-            <span className="text-accent-hover">STC Falcon Legal Services</span>
-            , led by <span className="text-accent-hover">S.T. Chelvan</span>, is
-            pleased to offer our expertise in assisting{" "}
-            <span className="text-accent-hover">Small & Medium</span> business
-            with <span className="text-accent-hover">Small Claims Court</span>{" "}
-            disputes.
+            <span>STC Falcon Legal Services</span>, led by{" "}
+            <span>S.T. Chelvan</span>, is pleased to offer our expertise in
+            assisting <span>Small & Medium</span> business with{" "}
+            <span>Small Claims Court</span> disputes.
           </p>
           <p className="max-w-sm mx-auto font-semibold mb-[30px] lg:mx-0 lg:max-w-[95%] text-gray-800 text-lg leading-tight">
             Our firm is committed to providing client-focused support,

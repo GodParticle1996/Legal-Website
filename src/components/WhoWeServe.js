@@ -59,7 +59,7 @@ const WhoWeServe = () => {
         <h3 className="font-primary font-extrabold text-2xl lg:text-3xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
           Our Services
         </h3>
-        <p className="max-w-[730px] mx-auto px-6 lg:px-0 mb-16 font-mont text-base lg:text-lg text-accent-secondary font-medium">
+        <p className="max-w-[730px] mx-auto px-6 lg:px-0 mb-16 font-body text-base lg:text-lg text-accent-secondary font-medium">
           At STC Falcon, Legal Services, we provide comprehensive legal support
           tailored to the needs of small and medium-sized businesses. Our
           services include:
@@ -90,7 +90,7 @@ const WhoWeServe = () => {
                       {item.description.map((point, i) => (
                         <li
                           key={i}
-                          className="font-medium leading-relaxed text-md font-cyber"
+                          className="font-medium leading-relaxed text-md font-body"
                         >
                           {point}
                         </li>
@@ -101,7 +101,7 @@ const WhoWeServe = () => {
                 {/* Show More Button */}
                 <div className="mt-4 text-center">
                   <Link to={`/services/${item.slug}`}>
-                    <button className="w-full px-4 py-2 mt-4 text-white transition duration-300 ease-in-out rounded-lg bg-accent hover:bg-dark-silver hover:text-black font-elegant">
+                    <button className="w-full px-4 py-2 mt-4 text-white transition duration-300 ease-in-out rounded-lg bg-accent hover:bg-dark-silver hover:text-black font-body">
                       Show More
                     </button>
                   </Link>

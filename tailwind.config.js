@@ -2,7 +2,7 @@
 export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 export const theme = {
   fontFamily: {
-    primary: "Playfair Display",
+    primary: ["Georgia", "serif"],
     body: "Open Sans",
     mont: ["Montserrat", "sans-serif"],
     pops: ["Poppins", "sans-serif"],
