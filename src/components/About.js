@@ -25,12 +25,15 @@ const About = () => {
                   <img src={Logo} alt="" width={140} />
                 </Link>
               </div>
-              <h3 className="text-2xl font-bold text-primary">
+              {/* <h3 className="text-2xl font-bold text-primary">
                 STC Falcon Legal Services
-              </h3>
+              </h3> */}
+              <h2 className="text-xl font-bold text-primary font-primary">
+                STC Falcon Legal Services
+              </h2>
             </div>
 
-            <p className="mb-6 leading-relaxed text-justify font-primary text-accent-secondary">
+            <p className="mb-6 text-base font-semibold leading-relaxed tracking-wide transition-colors text-accent-secondary duration-30 marker:text-accent">
               STC Falcon Legal Services is a boutique Paralegal firm led by Mr.
               S T Chelvan (STC). He started as a lawyer in Singapore and now
               practices in Waterdown, Ontario. He is a member of the Law Society
@@ -38,7 +41,7 @@ const About = () => {
               of cases.
             </p>
 
-            <p className="leading-relaxed text-justify font-primary text-accent-secondary">
+            <p className="mb-6 text-base font-semibold leading-relaxed tracking-wide transition-colors text-accent-secondary duration-30 marker:text-accent">
               His expertise is in personal injury claims, strategic planning,
               and guiding clients with their legal needs. He has a Paralegal
               Diploma from Canada, a Master's in International Business from the

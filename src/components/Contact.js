@@ -96,9 +96,9 @@ const Contact = () => {
             </p> */}
 
             <div className="p-8 text-left rounded-lg shadow-lg bg-light-silver">
-              <p className="mb-6 font-medium text-primary">
-                For further inquiries or to schedule your initial consultation,
-                please contact:
+              <p className="mb-6 text-base font-semibold leading-relaxed tracking-wide transition-colors text-accent-secondary duration-30 marker:text-accent">
+                For further inquiries or to schedule your consultation, please
+                contact:
               </p>
 
               <div className="space-y-3 text-primary">
@@ -108,7 +108,7 @@ const Contact = () => {
                   Website:{" "}
                   <a
                     href="https://stcfalcon.ca"
-                    className="transition-colors duration-300 text-accent hover:text-accent-hover"
+                    className="text-base font-semibold leading-relaxed tracking-wide transition-colors duration-300 text-sky-800 hover:text-sky-500 duration-30 marker:text-accent"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -117,19 +117,19 @@ const Contact = () => {
                 </p>
               </div>
 
-              <p className="mt-6 italic font-medium text-primary">
-                We look forward to assisting you in resolving your small claims
-                court disputes and ensuring your business thrives without
-                unnecessary legal burdens.
+              <p className="mt-6 text-base font-semibold leading-relaxed tracking-wide transition-colors text-accent-secondary duration-30 marker:text-accent">
+                We look forward to assisting you in resolving your disputes and
+                ensuring your business thrives without unnecessary legal
+                burdens.
               </p>
             </div>
           </div>
 
           {/* Form section */}
           <div className="bg-light-silver p-8 rounded-lg shadow-lg max-w-[650px] mx-auto mb-[40px]">
-            <h3 className="mb-6 text-2xl font-bold text-primary">
+            <h2 className="mb-6 text-2xl font-bold text-primary font-primary">
               Send Us a Message
-            </h3>
+            </h2>
 
             <form onSubmit={handleSubmit} className="flex flex-col space-y-6">
               <div className="flex flex-col gap-6 md:flex-row">

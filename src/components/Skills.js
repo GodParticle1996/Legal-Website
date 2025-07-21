@@ -60,7 +60,7 @@ const Skills = () => {
         <h3 className="font-primary font-extrabold text-2xl lg:text-4xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
           Our Services
         </h3>
-        <p className="max-w-[730px] mx-auto px-6 lg:px-0 mb-16 font-body text-base lg:text-lg text-accent-secondary font-medium">
+        <p className="max-w-[730px] mx-auto px-6 lg:px-0 mb-16 font-body lg:text-lg text-accent-secondary font-semibold text-gray-800 text-lg leading-tight">
           At STC Falcon Legal Services, we provide comprehensive legal support
           tailored to the needs of small and medium-sized businesses. Our
           services include:
@@ -108,9 +108,12 @@ const Skills = () => {
                           return (
                             <li
                               key={i}
-                              className="font-medium leading-relaxed tracking-wide transition-colors duration-300 text-accent-secondary text-m font-body marker:text-accent hover:text-primary"
+                              className="text-base font-semibold leading-relaxed tracking-wide transition-colors text-accent-secondary duration-30 marker:text-accent"
                             >
-                              <strong>{label}:</strong> {rest.join(": ")}
+                              <strong className="font-bold text-black">
+                                {label}:
+                              </strong>{" "}
+                              {rest.join(": ")}
                             </li>
                           );
                         })}
