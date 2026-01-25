@@ -50,22 +50,22 @@ export const navigation = [
 // testimonials data
 export const testimonials = [
   {
-    text: "After my workplace injury, I was overwhelmed with the WSIB claim process. STC Falcon Legal Services guided me through every step, securing the compensation I deserved. Their expertise in personal injury claims made all the difference.",
+    text: "After my workplace injury in Hamilton, I was overwhelmed with the WSIB claim process. STC Falcon Legal Services guided me through every step.",
     name: "Jane Cooper",
     image: ProfilePhoto1,
-    position: "Construction Worker, Toronto",
+    position: "Construction Worker, Hamilton",
   },
   {
     text: "When I was wrongfully dismissed from my position, STC Falcon Legal Services fought for my rights. Their employment law expertise helped me receive fair compensation and restored my confidence. Highly recommend their professional services.",
     name: "Theresa Webb",
     image: ProfilePhoto2,
-    position: "Former Finance Manager, Mississauga",
+    position: "Former Finance Manager, Stoney Creek",
   },
   {
     text: "I had a complex renovation dispute with my contractor. STC Falcon Legal Services helped me navigate Small Claims Court and successfully recovered my losses. Their attention to detail and knowledge of construction disputes was impressive.",
     name: "Kathryn Murphy",
     image: ProfilePhoto3,
-    position: "Homeowner, Brampton",
+    position: "Homeowner, Hamilton Mountain",
   },
 ];
 
@@ -76,7 +76,7 @@ export const skills = [
     title: "Personal Injury - SABs & WSIB",
     slug: "personal-injury",
     description:
-      "Have you been injured in an accident or at work in Ontario? STC Falcon Legal Services can help you navigate the complexities of Statutory Accident Benefits (SABs) and Workplace Safety and Insurance Board (WSIB) claims. We'll fight for the compensation you deserve for medical expenses, lost income, and other damages.",
+      "Injured in an accident or at work in Hamilton or Stoney Creek? STC Falcon Legal Services specializes in Statutory Accident Benefits (SABs) and WSIB claims.",
   },
   // {
   //   icon: <FaBriefcase className="text-4xl text-primary" />,
@@ -90,28 +90,28 @@ export const skills = [
     title: "Contract Disputes",
     slug: "contract-disputes",
     description:
-      "Are you involved in a contract dispute in Ontario? STC Falcon Legal Services can help you resolve disagreements related to contracts, including breach of contract, non-performance, and other contractual issues.",
+      "Facing a contract dispute in Hamilton? We help resolve disagreements related to breach of contract, non-performance, and other issues.",
   },
   {
     icon: <FaHammer className="text-4xl text-primary" />,
     title: "Construction & Renovation Disputes",
     slug: "construction-disputes",
     description:
-      "Experiencing problems with a contractor in Ontario? STC Falcon Legal Services assists homeowners and contractors in resolving disputes related to construction projects, renovations, and property damage.",
+      "Experiencing problems with a contractor in Hamilton/Niagara? STC Falcon Legal Services assists with construction projects, renovations, and property damage disputes.",
   },
   {
     icon: <FaBalanceScale className="text-4xl text-primary" />,
     title: "Debt Collection & Small Claims Court",
     slug: "debt-collection",
     description:
-      "Are you trying to recover unpaid invoices or debts in Ontario? STC Falcon Legal Services can help you navigate the Small Claims Court process and pursue legal action to collect what you're owed. We also assist with defending against claims.",
+      "Recover unpaid invoices or debts in Hamilton. We navigate the Small Claims Court process to help you collect what you're owed.",
   },
   {
     icon: <FaComments className="text-4xl text-primary" />,
     title: "Mediation & Tribunal Representation",
     slug: "mediation-tribunal",
     description:
-      "Seeking an alternative to litigation? STC Falcon Legal Services offers mediation services throughout Ontario. We also represent clients at various tribunals, advocating for their rights and interests.",
+      "Seeking mediation in Hamilton? We offer alternative dispute resolution and represent clients at various tribunals across Ontario.",
   },
 ];
 

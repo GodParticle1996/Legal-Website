@@ -2,9 +2,9 @@ import React from "react";
 
 const skills = [
   {
-    title: "Our Small Claims Court Services",
+    title: "Small Claims Court Services",
     slug: "small-claims",
-    icon: "/skills/smallclaims.png",
+    icon: "/skills/small-claims.jpg",
     description: [
       "File or Defend Claims: We manage claims up to $35,000, covering issues like unpaid invoices, contract breaches, or non-delivered goods/services.",
       "Comprehensive Support: From drafting and filing claims to representing you in court and enforcing judgments, we guide you every step of the way.",
@@ -13,9 +13,9 @@ const skills = [
     backgroundColor: "#1a2a44",
   },
   {
-    title: "Resolve Your Contract Disputes with STC Falcon Legal Services",
+    title: "Resolve Your Contract Disputes",
     slug: "contract-disputes",
-    icon: "/skills/contractdisputes.png",
+    icon: "/skills/contract-disputes.jpg",
     description: [
       "Comprehensive Contract Analysis: We thoroughly review contracts to identify breaches, ambiguities, or unenforceable terms, empowering you with clear insights.",
       "Settlement-Focused Solutions: Save time and money with practical resolutions like payment plans or mediation to avoid costly litigation.",
@@ -25,9 +25,9 @@ const skills = [
     backgroundColor: "#1a2a44",
   },
   {
-    title: "Resolve Construction Disputes with Confidence",
+    title: "Resolve Construction Disputes",
     slug: "construction",
-    icon: "/skills/constructiondisputes.png",
+    icon: "/skills/construction-disputes.jpg",
     description: [
       "Mediation Support: Fair, efficient resolutions for disputes over delays, workmanship, or payments.",
       "Contract Drafting: Clear, customized contracts to prevent conflicts.",
@@ -36,9 +36,9 @@ const skills = [
     backgroundColor: "#1a2a44",
   },
   {
-    title: "Our Mediation & Dispute Resolution Services (ADR)",
+    title: "Mediation & Dispute Resolution Services (ADR)",
     slug: "mediation",
-    icon: "/skills/adr.png",
+    icon: "/skills/adr.jpg",
     description: [
       "Mediation: We act as a neutral guide, bringing you and the other party together in private, confidential sessions. Our goal is to help you reach a fair agreement that works for everyone, without the stress of a courtroom.",
       "Arbitration Support: If your dispute needs a binding decision, we will represent you in arbitration, using our expertise in Ontario’s Arbitration Act, 1991, to ensure your case is presented strongly and resolved decisively.",
