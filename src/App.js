@@ -24,7 +24,7 @@ const App = () => {
             element={
               <div>
                 <SEO
-                  title="STC Falcon Legal Services | Hamilton, ON"
+                  title="STC Falcon Legal Services | Top Legal Service in Hamilton, ON"
                   description="Trusted Legal Services in Hamilton, ON. We specialize in Personal Injury, WSIB, Contract Disputes, and more. Contact us for a consultation."
                 />
                 <Banner />
