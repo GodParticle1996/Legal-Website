@@ -41,9 +41,8 @@ const skills = [
     icon: "/skills/adr.jpg",
     description: [
       "Mediation: We act as a neutral guide, bringing you and the other party together in private, confidential sessions. Our goal is to help you reach a fair agreement that works for everyone, without the stress of a courtroom.",
-      "Arbitration Support: If your dispute needs a binding decision, we will represent you in arbitration, using our expertise in Ontario’s Arbitration Act, 1991, to ensure your case is presented strongly and resolved decisively.",
-      "Expert Guidance: Whether it is a business, family, employment, or real estate issue, we provide clear, practical advice tailored to your situation. We’ll help you understand your options and choose the best path forward.",
-      "Why Choose Us: Our services are affordable, efficient, and designed to save you time while keeping relationships intact. We focus on flexible solutions that fit your needs and help you move forward with confidence.",
+      "Arbitration Support: If your dispute needs a binding decision, we will represent you in arbitration, using our expertise in Ontario’s Arbitration Act, 1991, to ensure your case is resolved decisively.",
+      "Expert Guidance: Whether it is a business, family, employment, or real estate issue, we provide clear, practical advice tailored to your situation. We’ll help you understand your options and choose the best path.",
     ],
     backgroundColor: "#1a2a44",
   },
@@ -85,9 +84,9 @@ const Skills = () => {
                   </h2>
                 </div>
                 {/* Inner container for image and bullet points */}
-                <div className="flex flex-row justify-between space-x-4">
+                <div className="flex flex-row justify-between space-x-4 w-full">
                   {/* Image div */}
-                  <div className="flex flex-col items-center justify-center">
+                  <div className="flex flex-col items-center justify-start">
                     <div
                       className="flex items-center justify-center w-[200px] overflow-hidden h-[180px]"
                       style={{ backgroundColor: "#2d2d2d" }}
@@ -100,7 +99,7 @@ const Skills = () => {
                     </div>
                   </div>
                   {/* Bullet points div */}
-                  <div className="flex flex-col items-center justify-center w-full">
+                  <div className="flex flex-col items-center justify-start w-full">
                     <div className="flex-grow w-full text-left">
                       <ul className="pl-5 space-y-3 list-disc">
                         {item.description.map((point, i) => {
