@@ -84,7 +84,7 @@ const Skills = () => {
                   </h2>
                 </div>
                 {/* Inner container for image and bullet points */}
-                <div className="flex flex-row justify-between space-x-4 w-full">
+                <div className="flex flex-col lg:flex-row justify-between lg:space-x-4 w-full space-y-4 lg:space-y-0">
                   {/* Image div */}
                   <div className="flex flex-col items-center justify-start">
                     <div
