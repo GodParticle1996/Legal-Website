@@ -1,35 +1,128 @@
 import React from "react";
-import { skills } from "../data";
+
+const skills = [
+  {
+    title: "Small Claims Court Services",
+    slug: "small-claims",
+    icon: "/skills/small-claims.jpg",
+    description: [
+      "File or Defend Claims: We manage claims up to $35,000, covering issues like unpaid invoices, contract breaches, or non-delivered goods/services.",
+      "Comprehensive Support: From drafting and filing claims to representing you in court and enforcing judgments, we guide you every step of the way.",
+      "Why Choose Us: Cost-effective solutions tailored to your needs. Streamlined case management for quick results. Focused expertise in Small Claims Court matters.",
+    ],
+    backgroundColor: "#1a2a44",
+  },
+  {
+    title: "Resolve Your Contract Disputes",
+    slug: "contract-disputes",
+    icon: "/skills/contract-disputes.jpg",
+    description: [
+      "Comprehensive Contract Analysis: We thoroughly review contracts to identify breaches, ambiguities, or unenforceable terms, empowering you with clear insights.",
+      "Settlement-Focused Solutions: Save time and money with practical resolutions like payment plans or mediation to avoid costly litigation.",
+      "Small Claims Court Support: When escalation is needed, we prepare and file claims with strong evidence to support your case.",
+      "Expert Guidance & Referrals: Get professional support within our scope, plus trusted referrals to skilled lawyers for complex litigation.",
+    ],
+    backgroundColor: "#1a2a44",
+  },
+  {
+    title: "Resolve Construction Disputes",
+    slug: "construction",
+    icon: "/skills/construction-disputes.jpg",
+    description: [
+      "Mediation Support: Fair, efficient resolutions for disputes over delays, workmanship, or payments.",
+      "Contract Drafting: Clear, customized contracts to prevent conflicts.",
+      "Regulatory Compliance: Expert guidance on Ontario’s Construction Act and Building Code Act, 1992.",
+    ],
+    backgroundColor: "#1a2a44",
+  },
+  {
+    title: "Mediation & Dispute Resolution Services (ADR)",
+    slug: "mediation",
+    icon: "/skills/adr.jpg",
+    description: [
+      "Mediation: We act as a neutral guide, bringing you and the other party together in private, confidential sessions. Our goal is to help you reach a fair agreement that works for everyone, without the stress of a courtroom.",
+      "Arbitration Support: If your dispute needs a binding decision, we will represent you in arbitration, using our expertise in Ontario’s Arbitration Act, 1991, to ensure your case is resolved decisively.",
+      "Expert Guidance: Whether it is a business, family, employment, or real estate issue, we provide clear, practical advice tailored to your situation. We’ll help you understand your options and choose the best path.",
+    ],
+    backgroundColor: "#1a2a44",
+  },
+];
 
 const Skills = () => {
   return (
-    <section id="skills" className="section bg-[#f8f3eca1] pb-32">
+    <section
+      id="skills"
+      className="section"
+      style={{ backgroundColor: "#d3d3d3" }}
+    >
       <div className="container mx-auto text-center">
-        <h2 className="mb-4 text-2xl font-extrabold font-primary">
-          What we do
-        </h2>
-        <p className="max-w-[540px] mx-auto px-6 lg:px-0 mb-16">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-          voluptatibus officiis ratione eum quas ullam quos impedit a
-          praesentium voluptates.
+        <h3 className="font-primary font-extrabold text-2xl lg:text-4xl text-primary mb-4 leading-tight lg:leading-[55px] tracking-tight">
+          Our Services
+        </h3>
+        <p className="max-w-[730px] mx-auto px-6 lg:px-0 mb-16 font-body lg:text-lg text-accent-secondary font-semibold text-gray-800 text-lg leading-tight">
+          At STC Falcon Legal Services, we provide comprehensive legal support
+          tailored to the needs of small and medium-sized businesses. Our
+          services include:
         </p>
-
-        <div className="gap-12 lg:grid lg:grid-cols-3">
-          {skills.map((item, index) => {
-            const { icon, title, description } = item;
-            return (
+        {/* Stack cards in a single column for full-width display */}
+        <div className="grid grid-cols-1 gap-6 px-5 lg:px-0">
+          {skills.map((item, index) => (
+            <div key={index} className="w-full cursor-pointer card-wrapper">
               <div
-                className="flex flex-col items-center justify-center mb-16 last:mb-0 lg:mb-0"
-                key={index}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                className="flex flex-col p-6 transition-all duration-300 transform rounded-lg shadow-2xl card-content bg-light-silver hover:shadow-3xl hover:-translate-y-1 hover:scale-100"
               >
-                <img className="mb-6" src={icon} alt="" />
-                <h4 className="mb-2 text-2xl font-bold font-primary">
-                  {title}
-                </h4>
-                <p className="max-w-[332px] lg:max-w-[350px]">{description}</p>
+                {/* Main heading centered above the inner content */}
+                <div className="flex">
+                  <h2 className="mb-4 text-xl font-bold text-center text-primary font-primary">
+                    {item.title}
+                  </h2>
+                </div>
+                {/* Inner container for image and bullet points */}
+                <div className="flex flex-col lg:flex-row justify-between lg:space-x-4 w-full space-y-4 lg:space-y-0">
+                  {/* Image div */}
+                  <div className="flex flex-col items-center justify-start">
+                    <div
+                      className="flex items-center justify-center w-[200px] overflow-hidden h-[180px]"
+                      style={{ backgroundColor: "#2d2d2d" }}
+                    >
+                      <img
+                        src={item.icon}
+                        alt={item.title}
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  {/* Bullet points div */}
+                  <div className="flex flex-col items-center justify-start w-full">
+                    <div className="flex-grow w-full text-left">
+                      <ul className="pl-5 space-y-3 list-disc">
+                        {item.description.map((point, i) => {
+                          const [label, ...rest] = point.split(": ");
+                          return (
+                            <li
+                              key={i}
+                              className="text-base font-semibold leading-relaxed tracking-wide transition-colors text-accent-secondary duration-30 marker:text-accent"
+                            >
+                              <strong className="font-bold text-black">
+                                {label}:
+                              </strong>{" "}
+                              {rest.join(": ")}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </section>

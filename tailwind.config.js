@@ -1,41 +1,59 @@
-module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  theme: {
-    fontFamily: {
-      primary: 'Playfair Display',
-      body: 'Open Sans',
+/** @type {import('tailwindcss').Config} */
+export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
+export const theme = {
+  fontFamily: {
+    primary: ["Georgia", "serif"],
+    body: "Open Sans",
+    mont: ["Montserrat", "sans-serif"],
+    pops: ["Poppins", "sans-serif"],
+    cyber: ["Orbitron", "sans-serif"],
+    elegant: ["Cormorant Garamond", "serif"],
+    modern: ["Space Grotesk", "sans-serif"],
+  },
+  screens: {
+    sm: "640px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1170px",
+  },
+  extend: {
+    colors: {
+      primary: {
+        DEFAULT: "000000",
+        darker: "#A9A9A9",
+        hover: "#D3D3D3",
+      },
+      accent: {
+        DEFAULT: "#212529",
+        "light-default": "#aba78f",
+        hover: "#BB864E",
+        secondary: "#595959",
+      },
+      "dark-silver": "#d3d3d3",
+      "light-silver": "#e9ecef",
+      "light-peach": "#fff5f0",
+      "muted-teal": "#d8eaea",
+      gray: "#766F66",
+      white: "#ffffff",
+      blue: "rgb(14 14 24)",
     },
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1170px',
+    spacing: {
+      54: "54px",
+      800: "800px",
     },
-    extend: {
-      colors: {
-        primary: {
-          DEFAULT: '#292A4A',
-          darker: '#242546',
-          hover: '#383956',
+    keyframes: {
+      "border-spin": {
+        "100%": {
+          transform: "rotate(-360deg)",
         },
-
-        accent: {
-          DEFAULT: '#CF9455',
-          hover: '#BB864E',
-        },
-
-        gray: '#766F66',
-        white: '#ffffff',
       },
-      spacing: {
-        54: '54px',
-        800: '800px',
-      },
-
-      content: {
-        quote: 'url("assets/img/quoteMark.png")',
-      },
+    },
+    animation: {
+      "border-spin": "border-spin 7s linear infinite",
+    },
+    content: {
+      quote: 'url("assets/img/quoteMark.png")',
     },
   },
-  plugins: [],
 };
+export const plugins = [];

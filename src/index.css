@@ -1,13 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply font-body text-primary;
+    @apply font-body text-primary; /* Will use #C0C0C0 */
   }
   .section {
-    @apply py-24;
+    @apply py-2;
   }
   .form-control {
     @apply w-full pl-4 text-sm rounded-sm outline-none h-54 font-body text-gray focus:ring-1 focus:ring-primary;
@@ -34,4 +36,60 @@
 
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-in-out;
+}
+
+@layer utilities {
+  /* Wrapper that acts as a border */
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-transparent p-[2px];
+  }
+
+  /* More visible rotating gradient border */
+  .card-wrapper::before {
+    background: conic-gradient(
+      rgba(255, 165, 0, 0.8) 0deg,
+      rgba(255, 69, 0, 0.8) 60deg,
+      transparent 80deg
+    );
+
+    @apply absolute left-[-50%] top-[-50%] h-[250%] w-[250%] animate-border-spin content-[''] z-0;
+  }
+
+  /* Ensure full content visibility without hiding the glow */
+  .card-content {
+    @apply relative z-10 flex flex-row justify-start w-full h-full p-6 bg-light-silver rounded-2xl;
+  }
+
+  /* New About section card animation */
+  .about-card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-transparent p-[2px];
+  }
+
+  /* Different animation for About section */
+  .about-card-wrapper::before {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 144, 144, 0.8) 0%,
+      rgba(255, 187, 124, 0.8) 50%,
+      rgba(255, 132, 0, 0.8) 100%
+    );
+
+    @apply absolute inset-0 content-[''] z-0;
+    background-size: 200% 100%;
+    animation: about-border-slide 4s linear infinite;
+  }
+
+  /* Content styling remains similar */
+  .about-card-content {
+    @apply relative z-10 flex flex-col justify-between w-full h-full p-6 bg-light-silver rounded-2xl;
+  }
+}
+
+@keyframes about-border-slide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
 }

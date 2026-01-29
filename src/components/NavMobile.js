@@ -7,6 +7,11 @@ import CloseIcon from "../assets/img/close.png";
 export const NavMobile = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
+  // Function to handle link clicks
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="relative z-20 lg:hidden">
       <button onClick={() => setIsOpen(true)}>
@@ -15,7 +20,7 @@ export const NavMobile = () => {
 
       <ul
         className={`${isOpen ? "right-0" : "-right-full"}
-    bg-primary fixed top-0 w-full h-screen
+    bg-accent fixed top-0 w-full h-screen
     text-white transition-all flex flex-col
     justify-center items-center space-y-8 text-lg`}
       >
@@ -33,10 +38,14 @@ export const NavMobile = () => {
                 to={item.href}
                 activeClass="active"
                 spy={true}
-                offset={-200}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleLinkClick}
                 className="transition-all duration-300 cursor-pointer hover:text-accent-hover"
-              ></Link>
-              {item.name}
+              >
+                {item.name}
+              </Link>
             </li>
           );
         })}
